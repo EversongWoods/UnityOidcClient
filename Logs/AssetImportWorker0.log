@@ -1,0 +1,1259 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.47f1 (88c277b85d21) revision 8962679'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit Professional' Language: 'zh' Physical Memory: 32530 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.47f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/Repos/Unity3D.Authentication.Example
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+61642
+Successfully changed project path to: D:/Repos/Unity3D.Authentication.Example
+D:/Repos/Unity3D.Authentication.Example
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [48264]  Target information:
+
+Player connection [48264]  * "[IP] 192.168.100.88 [Port] 0 [Flags] 2 [Guid] 927504069 [EditorId] 927504069 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-GG2JJ0R) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [48264]  * "[IP] 172.28.128.1 [Port] 0 [Flags] 2 [Guid] 927504069 [EditorId] 927504069 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-GG2JJ0R) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [48264]  * "[IP] 10.14.0.2 [Port] 0 [Flags] 2 [Guid] 927504069 [EditorId] 927504069 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-GG2JJ0R) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [48264] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [48264] Host joined alternative multi-casting on [225.0.0.222:34997]...
+[PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+Refreshing native plugins compatible for Editor in 36.96 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.47f1 (88c277b85d21)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.47f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Repos/Unity3D.Authentication.Example/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) UHD Graphics 770 (ID=0x4680)
+    Vendor:   Intel
+    VRAM:     16265 MB
+    Driver:   31.0.101.4577
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.47f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.47f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.47f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56556
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.47f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.47f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.47f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.47f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.007241 seconds.
+- Loaded All Assemblies, in  0.281 seconds
+Native extension for WindowsStandalone target not found
+[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+Native extension for iOS target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 343 ms
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.606 seconds
+Domain Reload Profiling: 886ms
+	BeginReloadAssembly (82ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (45ms)
+	LoadAllAssembliesAndSetupDomain (119ms)
+		LoadAssemblies (82ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (116ms)
+			TypeCache.Refresh (115ms)
+				TypeCache.ScanAssembly (105ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (607ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (562ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (418ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (94ms)
+			ProcessInitializeOnLoadMethodAttributes (45ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.633 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Getting installed packages took 22 ms
+No packages need restoring.
+Restoring packages took 9 ms
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.568 seconds
+Domain Reload Profiling: 1200ms
+	BeginReloadAssembly (101ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (16ms)
+	RebuildCommonClasses (20ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (40ms)
+	LoadAllAssembliesAndSetupDomain (463ms)
+		LoadAssemblies (403ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (118ms)
+			TypeCache.Refresh (104ms)
+				TypeCache.ScanAssembly (89ms)
+			ScanForSourceGeneratedMonoScriptInfo (12ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (568ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (475ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (19ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (54ms)
+			ProcessInitializeOnLoadAttributes (281ms)
+			ProcessInitializeOnLoadMethodAttributes (114ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 10.42 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2586 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 59 unused Assets / (70.5 KB). Loaded Objects now: 3042.
+Memory consumption went from 109.5 MB to 109.5 MB.
+Total: 4.772800 ms (FindLiveObjects: 0.137100 ms CreateObjectMapping: 0.143500 ms MarkObjects: 4.376400 ms  DeleteObjects: 0.114800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1207560.055384 seconds.
+  path: Assets/CertificateHandler.cs
+  artifactKey: Guid(a105e75063a66d14192b9ad9a99ff1e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CertificateHandler.cs using Guid(a105e75063a66d14192b9ad9a99ff1e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+ -> (artifact id: 'f022f7f88a28af36ca8fc619095561b8') in 0.001452 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 3.311904 seconds.
+  path: Assets/SignInBehavior.cs
+  artifactKey: Guid(afc4482495fea0b42a464c7a2f6a9886) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SignInBehavior.cs using Guid(afc4482495fea0b42a464c7a2f6a9886) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+ -> (artifact id: '108084679cb447337af69d31155a7148') in 0.000426 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.404749 seconds.
+  path: Assets/UnityAuthClient.cs
+  artifactKey: Guid(3d366cb4573c1c84ab1512366e6eede1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityAuthClient.cs using Guid(3d366cb4573c1c84ab1512366e6eede1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+ -> (artifact id: '97533282aad0da3d769b7a7a3d046551') in 0.000360 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 27.401144 seconds.
+  path: Assets/Scripts/Browers
+  artifactKey: Guid(11e6b7f8439424b419620889dd69aa71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Browers using Guid(11e6b7f8439424b419620889dd69aa71) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+ -> (artifact id: 'bf45d476a2b32b40ffd37a64d5a5ff31') in 0.000385 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 8.081402 seconds.
+  path: Assets/Scripts/SFSafariViewBrowser.cs
+  artifactKey: Guid(b134e2901097d124e83fa4aaee100fdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SFSafariViewBrowser.cs using Guid(b134e2901097d124e83fa4aaee100fdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+ -> (artifact id: '54bd8125318bf4b53531f922679fa233') in 0.000403 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 19.439954 seconds.
+  path: Assets/Scripts/Browers/StandaloneBrowser.cs
+  artifactKey: Guid(7b4d5287786d4794eb726817894952da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Browers/StandaloneBrowser.cs using Guid(7b4d5287786d4794eb726817894952da) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+ -> (artifact id: '0298adabf6b9e33d82fba49e0b631bb3') in 0.000366 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 9.022277 seconds.
+  path: Assets/Scripts/Browers/StandaloneBrowser.cs
+  artifactKey: Guid(7b4d5287786d4794eb726817894952da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Browers/StandaloneBrowser.cs using Guid(7b4d5287786d4794eb726817894952da) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+ -> (artifact id: 'b19df25c25c50c90e0d789c918bdb19b') in 0.000362 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 8.173461 seconds.
+  path: Assets/Scripts/Browers/StandaloneBrowser.cs
+  artifactKey: Guid(7b4d5287786d4794eb726817894952da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Browers/StandaloneBrowser.cs using Guid(7b4d5287786d4794eb726817894952da) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+ -> (artifact id: '58dbbd496f2da1fc3d5773854c12d981') in 0.000379 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 3.694141 seconds.
+  path: Assets/Scripts/Browers/StandaloneBrowser.cs
+  artifactKey: Guid(7b4d5287786d4794eb726817894952da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Browers/StandaloneBrowser.cs using Guid(7b4d5287786d4794eb726817894952da) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 24 workers.
+ -> (artifact id: 'c06c653e021d0773a99599af825c5efc') in 0.000461 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.605 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.706 seconds
+Domain Reload Profiling: 1310ms
+	BeginReloadAssembly (142ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (48ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (34ms)
+	LoadAllAssembliesAndSetupDomain (399ms)
+		LoadAssemblies (442ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (21ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (7ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (707ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (421ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (28ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (51ms)
+			ProcessInitializeOnLoadAttributes (246ms)
+			ProcessInitializeOnLoadMethodAttributes (89ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Refreshing native plugins compatible for Editor in 13.29 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2580 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 51 unused Assets / (45.0 KB). Loaded Objects now: 3046.
+Memory consumption went from 108.5 MB to 108.5 MB.
+Total: 4.413500 ms (FindLiveObjects: 0.139400 ms CreateObjectMapping: 0.057000 ms MarkObjects: 4.154800 ms  DeleteObjects: 0.060900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/SFSafariView.cs: c15d239316540f6869636d2c9e888068 -> f6ed21a347dfea02a81cfe96f43b3fdc
+  custom:scripting/monoscript/fileName/UnityAuthLoggerProvider.cs: c19dc6df7a72d9fbdbc063ae3b926d52 -> 6ccc35a1893b7999e38a8381ffa7425e
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/UnityAuthClient.cs: fb39b16882b0490d2c00e799da544ee6 -> cb352e3f9346cada208cbe3c9cc866e0
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/AndroidChromeCustomTab.cs: cc549a440790523bdef535f99e717ad6 -> f8499307963e6f0855d63dee657709b6
+  custom:scripting/monoscript/fileName/SFSafariViewBrowser.cs: f37eb7cfa6624c39754a9bdc570b2451 -> 40be7f8ad63d75e76950f0e667427864
+  custom:scripting/monoscript/fileName/IdentityBrowser.cs: 7a51fe3f8efd866eba9146ffc143a2f6 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/AndroidChromeCustomTabBrowser.cs: 6d28c26ac5dbc0326ee766589dc0a59c -> 35556cfbd63a685202656dfd26397ff5
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/SignInBehavior.cs: e68301c7241163c2d5531107d55a674e -> 2f1a71d18036a769b2f706c3e06f5315
+  custom:scripting/monoscript/fileName/UnityAuthLogger.cs: 745a060e17118ee3518b26e1b0a2ac2c -> 4e17f3000826cabee9acfc7b38871499
+  custom:scripting/monoscript/fileName/CertificateHandler.cs: 88592c61267020664ca487e91f874cfd -> 5b71c9577f632e52a4f9c4a337ab6e58
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 460d2da17df1af9310bedeacd9c6f158 -> 3cd83bac7dd14b89b1e729f2dd97b04c
+  custom:scripting/monoscript/fileName/StandaloneBrowser.cs: f9b20089c2a074425645cb1a0ff04e0c -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.559 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.628 seconds
+Domain Reload Profiling: 1186ms
+	BeginReloadAssembly (113ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (28ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (32ms)
+	LoadAllAssembliesAndSetupDomain (384ms)
+		LoadAssemblies (424ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (20ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (7ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (628ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (401ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (25ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (50ms)
+			ProcessInitializeOnLoadAttributes (231ms)
+			ProcessInitializeOnLoadMethodAttributes (87ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Refreshing native plugins compatible for Editor in 14.90 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2581 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 50 unused Assets / (44.5 KB). Loaded Objects now: 3049.
+Memory consumption went from 108.8 MB to 108.7 MB.
+Total: 4.442900 ms (FindLiveObjects: 0.154800 ms CreateObjectMapping: 0.216600 ms MarkObjects: 4.009100 ms  DeleteObjects: 0.061500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/SFSafariView.cs: c15d239316540f6869636d2c9e888068 -> f6ed21a347dfea02a81cfe96f43b3fdc
+  custom:scripting/monoscript/fileName/UnityAuthLoggerProvider.cs: c19dc6df7a72d9fbdbc063ae3b926d52 -> 6ccc35a1893b7999e38a8381ffa7425e
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/UnityAuthClient.cs: fb39b16882b0490d2c00e799da544ee6 -> cb352e3f9346cada208cbe3c9cc866e0
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/AndroidChromeCustomTab.cs: cc549a440790523bdef535f99e717ad6 -> f8499307963e6f0855d63dee657709b6
+  custom:scripting/monoscript/fileName/SFSafariViewBrowser.cs: f37eb7cfa6624c39754a9bdc570b2451 -> 40be7f8ad63d75e76950f0e667427864
+  custom:scripting/monoscript/fileName/IdentityBrowser.cs: 7a51fe3f8efd866eba9146ffc143a2f6 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/AndroidChromeCustomTabBrowser.cs: 6d28c26ac5dbc0326ee766589dc0a59c -> 35556cfbd63a685202656dfd26397ff5
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/SignInBehavior.cs: e68301c7241163c2d5531107d55a674e -> 2f1a71d18036a769b2f706c3e06f5315
+  custom:scripting/monoscript/fileName/UnityAuthLogger.cs: 745a060e17118ee3518b26e1b0a2ac2c -> 4e17f3000826cabee9acfc7b38871499
+  custom:scripting/monoscript/fileName/CertificateHandler.cs: 88592c61267020664ca487e91f874cfd -> 5b71c9577f632e52a4f9c4a337ab6e58
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 460d2da17df1af9310bedeacd9c6f158 -> 3cd83bac7dd14b89b1e729f2dd97b04c
+  custom:scripting/monoscript/fileName/StandaloneBrowser.cs: f9b20089c2a074425645cb1a0ff04e0c -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.543 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.633 seconds
+Domain Reload Profiling: 1175ms
+	BeginReloadAssembly (107ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (26ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (32ms)
+	LoadAllAssembliesAndSetupDomain (378ms)
+		LoadAssemblies (410ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (20ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (7ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (633ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (401ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (24ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (53ms)
+			ProcessInitializeOnLoadAttributes (230ms)
+			ProcessInitializeOnLoadMethodAttributes (87ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Refreshing native plugins compatible for Editor in 11.38 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2581 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 50 unused Assets / (44.5 KB). Loaded Objects now: 3052.
+Memory consumption went from 108.8 MB to 108.7 MB.
+Total: 5.368000 ms (FindLiveObjects: 0.230500 ms CreateObjectMapping: 0.060000 ms MarkObjects: 5.009000 ms  DeleteObjects: 0.066600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/SFSafariView.cs: c15d239316540f6869636d2c9e888068 -> f6ed21a347dfea02a81cfe96f43b3fdc
+  custom:scripting/monoscript/fileName/UnityAuthLoggerProvider.cs: c19dc6df7a72d9fbdbc063ae3b926d52 -> 6ccc35a1893b7999e38a8381ffa7425e
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/UnityAuthClient.cs: fb39b16882b0490d2c00e799da544ee6 -> cb352e3f9346cada208cbe3c9cc866e0
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/AndroidChromeCustomTab.cs: cc549a440790523bdef535f99e717ad6 -> f8499307963e6f0855d63dee657709b6
+  custom:scripting/monoscript/fileName/SFSafariViewBrowser.cs: f37eb7cfa6624c39754a9bdc570b2451 -> 40be7f8ad63d75e76950f0e667427864
+  custom:scripting/monoscript/fileName/IdentityBrowser.cs: 7a51fe3f8efd866eba9146ffc143a2f6 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/AndroidChromeCustomTabBrowser.cs: 6d28c26ac5dbc0326ee766589dc0a59c -> 35556cfbd63a685202656dfd26397ff5
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/SignInBehavior.cs: e68301c7241163c2d5531107d55a674e -> 2f1a71d18036a769b2f706c3e06f5315
+  custom:scripting/monoscript/fileName/UnityAuthLogger.cs: 745a060e17118ee3518b26e1b0a2ac2c -> 4e17f3000826cabee9acfc7b38871499
+  custom:scripting/monoscript/fileName/CertificateHandler.cs: 88592c61267020664ca487e91f874cfd -> 5b71c9577f632e52a4f9c4a337ab6e58
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 460d2da17df1af9310bedeacd9c6f158 -> 3cd83bac7dd14b89b1e729f2dd97b04c
+  custom:scripting/monoscript/fileName/StandaloneBrowser.cs: f9b20089c2a074425645cb1a0ff04e0c -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.509 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.739 seconds
+Domain Reload Profiling: 1247ms
+	BeginReloadAssembly (110ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (26ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (34ms)
+	LoadAllAssembliesAndSetupDomain (333ms)
+		LoadAssemblies (383ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (8ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (740ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (503ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (25ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (62ms)
+			ProcessInitializeOnLoadAttributes (292ms)
+			ProcessInitializeOnLoadMethodAttributes (118ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Refreshing native plugins compatible for Editor in 13.32 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2581 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 50 unused Assets / (44.5 KB). Loaded Objects now: 3055.
+Memory consumption went from 108.8 MB to 108.7 MB.
+Total: 4.434800 ms (FindLiveObjects: 0.149200 ms CreateObjectMapping: 0.076400 ms MarkObjects: 4.148200 ms  DeleteObjects: 0.060100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/SFSafariView.cs: c15d239316540f6869636d2c9e888068 -> f6ed21a347dfea02a81cfe96f43b3fdc
+  custom:scripting/monoscript/fileName/UnityAuthLoggerProvider.cs: c19dc6df7a72d9fbdbc063ae3b926d52 -> 6ccc35a1893b7999e38a8381ffa7425e
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/UnityAuthClient.cs: fb39b16882b0490d2c00e799da544ee6 -> cb352e3f9346cada208cbe3c9cc866e0
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/AndroidChromeCustomTab.cs: cc549a440790523bdef535f99e717ad6 -> f8499307963e6f0855d63dee657709b6
+  custom:scripting/monoscript/fileName/SFSafariViewBrowser.cs: f37eb7cfa6624c39754a9bdc570b2451 -> 40be7f8ad63d75e76950f0e667427864
+  custom:scripting/monoscript/fileName/IdentityBrowser.cs: 7a51fe3f8efd866eba9146ffc143a2f6 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/AndroidChromeCustomTabBrowser.cs: 6d28c26ac5dbc0326ee766589dc0a59c -> 35556cfbd63a685202656dfd26397ff5
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/SignInBehavior.cs: e68301c7241163c2d5531107d55a674e -> 2f1a71d18036a769b2f706c3e06f5315
+  custom:scripting/monoscript/fileName/UnityAuthLogger.cs: 745a060e17118ee3518b26e1b0a2ac2c -> 4e17f3000826cabee9acfc7b38871499
+  custom:scripting/monoscript/fileName/CertificateHandler.cs: 88592c61267020664ca487e91f874cfd -> 5b71c9577f632e52a4f9c4a337ab6e58
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 460d2da17df1af9310bedeacd9c6f158 -> 3cd83bac7dd14b89b1e729f2dd97b04c
+  custom:scripting/monoscript/fileName/StandaloneBrowser.cs: f9b20089c2a074425645cb1a0ff04e0c -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.611 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.737 seconds
+Domain Reload Profiling: 1348ms
+	BeginReloadAssembly (115ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (29ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (38ms)
+	LoadAllAssembliesAndSetupDomain (433ms)
+		LoadAssemblies (472ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (20ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (7ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (737ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (444ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (24ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (58ms)
+			ProcessInitializeOnLoadAttributes (252ms)
+			ProcessInitializeOnLoadMethodAttributes (101ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Refreshing native plugins compatible for Editor in 15.01 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2581 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 50 unused Assets / (44.5 KB). Loaded Objects now: 3058.
+Memory consumption went from 108.8 MB to 108.7 MB.
+Total: 4.552200 ms (FindLiveObjects: 0.169200 ms CreateObjectMapping: 0.099900 ms MarkObjects: 4.213200 ms  DeleteObjects: 0.068800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/SFSafariView.cs: c15d239316540f6869636d2c9e888068 -> f6ed21a347dfea02a81cfe96f43b3fdc
+  custom:scripting/monoscript/fileName/UnityAuthLoggerProvider.cs: c19dc6df7a72d9fbdbc063ae3b926d52 -> 6ccc35a1893b7999e38a8381ffa7425e
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/UnityAuthClient.cs: fb39b16882b0490d2c00e799da544ee6 -> cb352e3f9346cada208cbe3c9cc866e0
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/AndroidChromeCustomTab.cs: cc549a440790523bdef535f99e717ad6 -> f8499307963e6f0855d63dee657709b6
+  custom:scripting/monoscript/fileName/SFSafariViewBrowser.cs: f37eb7cfa6624c39754a9bdc570b2451 -> 40be7f8ad63d75e76950f0e667427864
+  custom:scripting/monoscript/fileName/IdentityBrowser.cs: 7a51fe3f8efd866eba9146ffc143a2f6 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/AndroidChromeCustomTabBrowser.cs: 6d28c26ac5dbc0326ee766589dc0a59c -> 35556cfbd63a685202656dfd26397ff5
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/SignInBehavior.cs: e68301c7241163c2d5531107d55a674e -> 2f1a71d18036a769b2f706c3e06f5315
+  custom:scripting/monoscript/fileName/UnityAuthLogger.cs: 745a060e17118ee3518b26e1b0a2ac2c -> 4e17f3000826cabee9acfc7b38871499
+  custom:scripting/monoscript/fileName/CertificateHandler.cs: 88592c61267020664ca487e91f874cfd -> 5b71c9577f632e52a4f9c4a337ab6e58
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 460d2da17df1af9310bedeacd9c6f158 -> 3cd83bac7dd14b89b1e729f2dd97b04c
+  custom:scripting/monoscript/fileName/StandaloneBrowser.cs: f9b20089c2a074425645cb1a0ff04e0c -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.604 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.624 seconds
+Domain Reload Profiling: 1227ms
+	BeginReloadAssembly (116ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (29ms)
+	RebuildCommonClasses (21ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (36ms)
+	LoadAllAssembliesAndSetupDomain (422ms)
+		LoadAssemblies (464ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (18ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (6ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (625ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (398ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (19ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (49ms)
+			ProcessInitializeOnLoadAttributes (232ms)
+			ProcessInitializeOnLoadMethodAttributes (91ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Refreshing native plugins compatible for Editor in 12.57 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2581 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 50 unused Assets / (44.5 KB). Loaded Objects now: 3061.
+Memory consumption went from 108.8 MB to 108.7 MB.
+Total: 4.254500 ms (FindLiveObjects: 0.154100 ms CreateObjectMapping: 0.069500 ms MarkObjects: 3.974100 ms  DeleteObjects: 0.056000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/SFSafariView.cs: c15d239316540f6869636d2c9e888068 -> f6ed21a347dfea02a81cfe96f43b3fdc
+  custom:scripting/monoscript/fileName/UnityAuthLoggerProvider.cs: c19dc6df7a72d9fbdbc063ae3b926d52 -> 6ccc35a1893b7999e38a8381ffa7425e
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/UnityAuthClient.cs: fb39b16882b0490d2c00e799da544ee6 -> cb352e3f9346cada208cbe3c9cc866e0
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/AndroidChromeCustomTab.cs: cc549a440790523bdef535f99e717ad6 -> f8499307963e6f0855d63dee657709b6
+  custom:scripting/monoscript/fileName/SFSafariViewBrowser.cs: f37eb7cfa6624c39754a9bdc570b2451 -> 40be7f8ad63d75e76950f0e667427864
+  custom:scripting/monoscript/fileName/IdentityBrowser.cs: 7a51fe3f8efd866eba9146ffc143a2f6 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/AndroidChromeCustomTabBrowser.cs: 6d28c26ac5dbc0326ee766589dc0a59c -> 35556cfbd63a685202656dfd26397ff5
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/SignInBehavior.cs: e68301c7241163c2d5531107d55a674e -> 2f1a71d18036a769b2f706c3e06f5315
+  custom:scripting/monoscript/fileName/UnityAuthLogger.cs: 745a060e17118ee3518b26e1b0a2ac2c -> 4e17f3000826cabee9acfc7b38871499
+  custom:scripting/monoscript/fileName/CertificateHandler.cs: 88592c61267020664ca487e91f874cfd -> 5b71c9577f632e52a4f9c4a337ab6e58
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 460d2da17df1af9310bedeacd9c6f158 -> 3cd83bac7dd14b89b1e729f2dd97b04c
+  custom:scripting/monoscript/fileName/StandaloneBrowser.cs: f9b20089c2a074425645cb1a0ff04e0c -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.601 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.738 seconds
+Domain Reload Profiling: 1337ms
+	BeginReloadAssembly (110ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (26ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (33ms)
+	LoadAllAssembliesAndSetupDomain (430ms)
+		LoadAssemblies (472ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (16ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (5ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (738ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (494ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (32ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (82ms)
+			ProcessInitializeOnLoadAttributes (241ms)
+			ProcessInitializeOnLoadMethodAttributes (127ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Script is not up to date after domain reload: guid(afc4482495fea0b42a464c7a2f6a9886) path("Assets/Scripts/SignInBehavior.cs") state(2)
+Refreshing native plugins compatible for Editor in 13.32 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2580 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 50 unused Assets / (44.4 KB). Loaded Objects now: 3063.
+Memory consumption went from 108.8 MB to 108.7 MB.
+Total: 4.040300 ms (FindLiveObjects: 0.136100 ms CreateObjectMapping: 0.055700 ms MarkObjects: 3.787200 ms  DeleteObjects: 0.060400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/SFSafariView.cs: c15d239316540f6869636d2c9e888068 -> f6ed21a347dfea02a81cfe96f43b3fdc
+  custom:scripting/monoscript/fileName/UnityAuthLoggerProvider.cs: c19dc6df7a72d9fbdbc063ae3b926d52 -> 6ccc35a1893b7999e38a8381ffa7425e
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/UnityAuthClient.cs: fb39b16882b0490d2c00e799da544ee6 -> cb352e3f9346cada208cbe3c9cc866e0
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/AndroidChromeCustomTab.cs: cc549a440790523bdef535f99e717ad6 -> f8499307963e6f0855d63dee657709b6
+  custom:scripting/monoscript/fileName/SFSafariViewBrowser.cs: f37eb7cfa6624c39754a9bdc570b2451 -> 40be7f8ad63d75e76950f0e667427864
+  custom:scripting/monoscript/fileName/IdentityBrowser.cs: 7a51fe3f8efd866eba9146ffc143a2f6 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/AndroidChromeCustomTabBrowser.cs: 6d28c26ac5dbc0326ee766589dc0a59c -> 35556cfbd63a685202656dfd26397ff5
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/SignInBehavior.cs: e68301c7241163c2d5531107d55a674e -> 2f1a71d18036a769b2f706c3e06f5315
+  custom:scripting/monoscript/fileName/UnityAuthLogger.cs: 745a060e17118ee3518b26e1b0a2ac2c -> 4e17f3000826cabee9acfc7b38871499
+  custom:scripting/monoscript/fileName/CertificateHandler.cs: 88592c61267020664ca487e91f874cfd -> 5b71c9577f632e52a4f9c4a337ab6e58
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 460d2da17df1af9310bedeacd9c6f158 -> 3cd83bac7dd14b89b1e729f2dd97b04c
+  custom:scripting/monoscript/fileName/StandaloneBrowser.cs: f9b20089c2a074425645cb1a0ff04e0c -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.566 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.643 seconds
+Domain Reload Profiling: 1208ms
+	BeginReloadAssembly (114ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (27ms)
+	RebuildCommonClasses (20ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (34ms)
+	LoadAllAssembliesAndSetupDomain (390ms)
+		LoadAssemblies (431ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (18ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (6ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (643ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (408ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (26ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (51ms)
+			ProcessInitializeOnLoadAttributes (233ms)
+			ProcessInitializeOnLoadMethodAttributes (91ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Refreshing native plugins compatible for Editor in 11.60 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2581 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 50 unused Assets / (44.5 KB). Loaded Objects now: 3067.
+Memory consumption went from 108.8 MB to 108.7 MB.
+Total: 4.521900 ms (FindLiveObjects: 0.145500 ms CreateObjectMapping: 0.075400 ms MarkObjects: 4.239000 ms  DeleteObjects: 0.061000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/SFSafariView.cs: c15d239316540f6869636d2c9e888068 -> f6ed21a347dfea02a81cfe96f43b3fdc
+  custom:scripting/monoscript/fileName/UnityAuthLoggerProvider.cs: c19dc6df7a72d9fbdbc063ae3b926d52 -> 6ccc35a1893b7999e38a8381ffa7425e
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/UnityAuthClient.cs: fb39b16882b0490d2c00e799da544ee6 -> cb352e3f9346cada208cbe3c9cc866e0
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/AndroidChromeCustomTab.cs: cc549a440790523bdef535f99e717ad6 -> f8499307963e6f0855d63dee657709b6
+  custom:scripting/monoscript/fileName/SFSafariViewBrowser.cs: f37eb7cfa6624c39754a9bdc570b2451 -> 40be7f8ad63d75e76950f0e667427864
+  custom:scripting/monoscript/fileName/IdentityBrowser.cs: 7a51fe3f8efd866eba9146ffc143a2f6 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/AndroidChromeCustomTabBrowser.cs: 6d28c26ac5dbc0326ee766589dc0a59c -> 35556cfbd63a685202656dfd26397ff5
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/SignInBehavior.cs: e68301c7241163c2d5531107d55a674e -> 2f1a71d18036a769b2f706c3e06f5315
+  custom:scripting/monoscript/fileName/UnityAuthLogger.cs: 745a060e17118ee3518b26e1b0a2ac2c -> 4e17f3000826cabee9acfc7b38871499
+  custom:scripting/monoscript/fileName/CertificateHandler.cs: 88592c61267020664ca487e91f874cfd -> 5b71c9577f632e52a4f9c4a337ab6e58
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 460d2da17df1af9310bedeacd9c6f158 -> 3cd83bac7dd14b89b1e729f2dd97b04c
+  custom:scripting/monoscript/fileName/StandaloneBrowser.cs: f9b20089c2a074425645cb1a0ff04e0c -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.554 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.650 seconds
+Domain Reload Profiling: 1203ms
+	BeginReloadAssembly (105ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (22ms)
+	RebuildCommonClasses (20ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (32ms)
+	LoadAllAssembliesAndSetupDomain (389ms)
+		LoadAssemblies (428ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (17ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (5ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (650ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (385ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (18ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (48ms)
+			ProcessInitializeOnLoadAttributes (222ms)
+			ProcessInitializeOnLoadMethodAttributes (91ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Refreshing native plugins compatible for Editor in 10.45 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2581 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 50 unused Assets / (44.4 KB). Loaded Objects now: 3070.
+Memory consumption went from 108.8 MB to 108.7 MB.
+Total: 4.588100 ms (FindLiveObjects: 0.165200 ms CreateObjectMapping: 0.061900 ms MarkObjects: 4.299100 ms  DeleteObjects: 0.061000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/SFSafariView.cs: c15d239316540f6869636d2c9e888068 -> f6ed21a347dfea02a81cfe96f43b3fdc
+  custom:scripting/monoscript/fileName/UnityAuthLoggerProvider.cs: c19dc6df7a72d9fbdbc063ae3b926d52 -> 6ccc35a1893b7999e38a8381ffa7425e
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/UnityAuthClient.cs: fb39b16882b0490d2c00e799da544ee6 -> cb352e3f9346cada208cbe3c9cc866e0
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/AndroidChromeCustomTab.cs: cc549a440790523bdef535f99e717ad6 -> f8499307963e6f0855d63dee657709b6
+  custom:scripting/monoscript/fileName/SFSafariViewBrowser.cs: f37eb7cfa6624c39754a9bdc570b2451 -> 40be7f8ad63d75e76950f0e667427864
+  custom:scripting/monoscript/fileName/IdentityBrowser.cs: 7a51fe3f8efd866eba9146ffc143a2f6 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/AndroidChromeCustomTabBrowser.cs: 6d28c26ac5dbc0326ee766589dc0a59c -> 35556cfbd63a685202656dfd26397ff5
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/SignInBehavior.cs: e68301c7241163c2d5531107d55a674e -> 2f1a71d18036a769b2f706c3e06f5315
+  custom:scripting/monoscript/fileName/UnityAuthLogger.cs: 745a060e17118ee3518b26e1b0a2ac2c -> 4e17f3000826cabee9acfc7b38871499
+  custom:scripting/monoscript/fileName/CertificateHandler.cs: 88592c61267020664ca487e91f874cfd -> 5b71c9577f632e52a4f9c4a337ab6e58
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 460d2da17df1af9310bedeacd9c6f158 -> 3cd83bac7dd14b89b1e729f2dd97b04c
+  custom:scripting/monoscript/fileName/StandaloneBrowser.cs: f9b20089c2a074425645cb1a0ff04e0c -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.571 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.646 seconds
+Domain Reload Profiling: 1216ms
+	BeginReloadAssembly (112ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (26ms)
+	RebuildCommonClasses (21ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (33ms)
+	LoadAllAssembliesAndSetupDomain (396ms)
+		LoadAssemblies (431ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (23ms)
+			TypeCache.Refresh (14ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (7ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (646ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (397ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (19ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (51ms)
+			ProcessInitializeOnLoadAttributes (229ms)
+			ProcessInitializeOnLoadMethodAttributes (92ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Refreshing native plugins compatible for Editor in 15.52 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2581 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 50 unused Assets / (44.5 KB). Loaded Objects now: 3073.
+Memory consumption went from 108.8 MB to 108.7 MB.
+Total: 4.297100 ms (FindLiveObjects: 0.175400 ms CreateObjectMapping: 0.071700 ms MarkObjects: 3.970900 ms  DeleteObjects: 0.077600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/SFSafariView.cs: c15d239316540f6869636d2c9e888068 -> f6ed21a347dfea02a81cfe96f43b3fdc
+  custom:scripting/monoscript/fileName/UnityAuthLoggerProvider.cs: c19dc6df7a72d9fbdbc063ae3b926d52 -> 6ccc35a1893b7999e38a8381ffa7425e
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/UnityAuthClient.cs: fb39b16882b0490d2c00e799da544ee6 -> cb352e3f9346cada208cbe3c9cc866e0
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/AndroidChromeCustomTab.cs: cc549a440790523bdef535f99e717ad6 -> f8499307963e6f0855d63dee657709b6
+  custom:scripting/monoscript/fileName/SFSafariViewBrowser.cs: f37eb7cfa6624c39754a9bdc570b2451 -> 40be7f8ad63d75e76950f0e667427864
+  custom:scripting/monoscript/fileName/IdentityBrowser.cs: 7a51fe3f8efd866eba9146ffc143a2f6 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/AndroidChromeCustomTabBrowser.cs: 6d28c26ac5dbc0326ee766589dc0a59c -> 35556cfbd63a685202656dfd26397ff5
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/SignInBehavior.cs: e68301c7241163c2d5531107d55a674e -> 2f1a71d18036a769b2f706c3e06f5315
+  custom:scripting/monoscript/fileName/UnityAuthLogger.cs: 745a060e17118ee3518b26e1b0a2ac2c -> 4e17f3000826cabee9acfc7b38871499
+  custom:scripting/monoscript/fileName/CertificateHandler.cs: 88592c61267020664ca487e91f874cfd -> 5b71c9577f632e52a4f9c4a337ab6e58
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 460d2da17df1af9310bedeacd9c6f158 -> 3cd83bac7dd14b89b1e729f2dd97b04c
+  custom:scripting/monoscript/fileName/StandaloneBrowser.cs: f9b20089c2a074425645cb1a0ff04e0c -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.567 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.668 seconds
+Domain Reload Profiling: 1234ms
+	BeginReloadAssembly (117ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (27ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (33ms)
+	LoadAllAssembliesAndSetupDomain (389ms)
+		LoadAssemblies (431ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (18ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (6ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (668ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (463ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (24ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (63ms)
+			ProcessInitializeOnLoadAttributes (276ms)
+			ProcessInitializeOnLoadMethodAttributes (92ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Refreshing native plugins compatible for Editor in 13.92 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2581 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 52 unused Assets / (46.0 KB). Loaded Objects now: 3076.
+Memory consumption went from 108.8 MB to 108.7 MB.
+Total: 4.377500 ms (FindLiveObjects: 0.160700 ms CreateObjectMapping: 0.165300 ms MarkObjects: 3.984600 ms  DeleteObjects: 0.065500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/SFSafariView.cs: c15d239316540f6869636d2c9e888068 -> f6ed21a347dfea02a81cfe96f43b3fdc
+  custom:scripting/monoscript/fileName/UnityAuthLoggerProvider.cs: 7c319dbfc46cb4361dd34e7926ea85e1 -> 6ccc35a1893b7999e38a8381ffa7425e
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/UnityAuthClient.cs: fb39b16882b0490d2c00e799da544ee6 -> cb352e3f9346cada208cbe3c9cc866e0
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/AndroidChromeCustomTab.cs: cc549a440790523bdef535f99e717ad6 -> f8499307963e6f0855d63dee657709b6
+  custom:scripting/monoscript/fileName/SFSafariViewBrowser.cs: f37eb7cfa6624c39754a9bdc570b2451 -> 40be7f8ad63d75e76950f0e667427864
+  custom:scripting/monoscript/fileName/IdentityBrowser.cs: 7a51fe3f8efd866eba9146ffc143a2f6 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/AndroidChromeCustomTabBrowser.cs: 6d28c26ac5dbc0326ee766589dc0a59c -> 35556cfbd63a685202656dfd26397ff5
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/SignInBehavior.cs: e68301c7241163c2d5531107d55a674e -> 2f1a71d18036a769b2f706c3e06f5315
+  custom:scripting/monoscript/fileName/UnityAuthLogger.cs: b1bd50f8277847e0bb3db61179a406d5 -> 4e17f3000826cabee9acfc7b38871499
+  custom:scripting/monoscript/fileName/CertificateHandler.cs: 88592c61267020664ca487e91f874cfd -> 5b71c9577f632e52a4f9c4a337ab6e58
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 554aa151be97323484c794984f84d414 -> 3cd83bac7dd14b89b1e729f2dd97b04c
+  custom:scripting/monoscript/fileName/StandaloneBrowser.cs: f9b20089c2a074425645cb1a0ff04e0c -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 42.62 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1 unused Assets / (3.1 KB). Loaded Objects now: 3076.
+Memory consumption went from 68.5 MB to 68.5 MB.
+Total: 4.232300 ms (FindLiveObjects: 0.151600 ms CreateObjectMapping: 0.057400 ms MarkObjects: 4.001500 ms  DeleteObjects: 0.020300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/SFSafariView.cs: c15d239316540f6869636d2c9e888068 -> f6ed21a347dfea02a81cfe96f43b3fdc
+  custom:scripting/monoscript/fileName/UnityAuthLoggerProvider.cs: 7c319dbfc46cb4361dd34e7926ea85e1 -> 6ccc35a1893b7999e38a8381ffa7425e
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/UnityAuthClient.cs: fb39b16882b0490d2c00e799da544ee6 -> cb352e3f9346cada208cbe3c9cc866e0
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/AndroidChromeCustomTab.cs: cc549a440790523bdef535f99e717ad6 -> f8499307963e6f0855d63dee657709b6
+  custom:scripting/monoscript/fileName/SFSafariViewBrowser.cs: f37eb7cfa6624c39754a9bdc570b2451 -> 40be7f8ad63d75e76950f0e667427864
+  custom:scripting/monoscript/fileName/IdentityBrowser.cs: 7a51fe3f8efd866eba9146ffc143a2f6 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/AndroidChromeCustomTabBrowser.cs: 6d28c26ac5dbc0326ee766589dc0a59c -> 35556cfbd63a685202656dfd26397ff5
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/SignInBehavior.cs: e68301c7241163c2d5531107d55a674e -> 2f1a71d18036a769b2f706c3e06f5315
+  custom:scripting/monoscript/fileName/UnityAuthLogger.cs: b1bd50f8277847e0bb3db61179a406d5 -> 4e17f3000826cabee9acfc7b38871499
+  custom:scripting/monoscript/fileName/CertificateHandler.cs: 88592c61267020664ca487e91f874cfd -> 5b71c9577f632e52a4f9c4a337ab6e58
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 554aa151be97323484c794984f84d414 -> 3cd83bac7dd14b89b1e729f2dd97b04c
+  custom:scripting/monoscript/fileName/StandaloneBrowser.cs: f9b20089c2a074425645cb1a0ff04e0c -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 23.47 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1 unused Assets / (3.1 KB). Loaded Objects now: 3076.
+Memory consumption went from 68.3 MB to 68.3 MB.
+Total: 13.121300 ms (FindLiveObjects: 0.508200 ms CreateObjectMapping: 0.306600 ms MarkObjects: 12.271800 ms  DeleteObjects: 0.023800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/SFSafariView.cs: c15d239316540f6869636d2c9e888068 -> f6ed21a347dfea02a81cfe96f43b3fdc
+  custom:scripting/monoscript/fileName/UnityAuthLoggerProvider.cs: 7c319dbfc46cb4361dd34e7926ea85e1 -> 6ccc35a1893b7999e38a8381ffa7425e
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/UnityAuthClient.cs: fb39b16882b0490d2c00e799da544ee6 -> cb352e3f9346cada208cbe3c9cc866e0
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/AndroidChromeCustomTab.cs: cc549a440790523bdef535f99e717ad6 -> f8499307963e6f0855d63dee657709b6
+  custom:scripting/monoscript/fileName/SFSafariViewBrowser.cs: f37eb7cfa6624c39754a9bdc570b2451 -> 40be7f8ad63d75e76950f0e667427864
+  custom:scripting/monoscript/fileName/IdentityBrowser.cs: 7a51fe3f8efd866eba9146ffc143a2f6 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/AndroidChromeCustomTabBrowser.cs: 6d28c26ac5dbc0326ee766589dc0a59c -> 35556cfbd63a685202656dfd26397ff5
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/SignInBehavior.cs: e68301c7241163c2d5531107d55a674e -> 2f1a71d18036a769b2f706c3e06f5315
+  custom:scripting/monoscript/fileName/UnityAuthLogger.cs: b1bd50f8277847e0bb3db61179a406d5 -> 4e17f3000826cabee9acfc7b38871499
+  custom:scripting/monoscript/fileName/CertificateHandler.cs: 88592c61267020664ca487e91f874cfd -> 5b71c9577f632e52a4f9c4a337ab6e58
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 554aa151be97323484c794984f84d414 -> 3cd83bac7dd14b89b1e729f2dd97b04c
+  custom:scripting/monoscript/fileName/StandaloneBrowser.cs: f9b20089c2a074425645cb1a0ff04e0c -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
