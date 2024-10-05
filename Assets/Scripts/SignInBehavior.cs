@@ -21,16 +21,16 @@ namespace Assets
         private bool _signinCancelled;
         private DateTime _watchForReplyStartTime;
         private bool _watchForReply;
-        private UnityAuthClient _authClient;
+        private UnityOidcClient _authClient;
         private bool _signedIn;
-        private const double MaxSecondsToWaitForAuthReply = 3;
+        private const double MaxSecondsToWaitForAuthReply = 1.5f;
 
         private void Start()
         {
             Application.SetStackTraceLogType(LogType.Log, StackTraceLogType.None);
             Debug.Log("SignInBehavior::Start");
             EnableSignInButton(true);
-            _authClient = new UnityAuthClient(authorizeUrl);
+            _authClient = new UnityOidcClient(authorizeUrl);
         }
 
         public async void OnSignInClicked()
@@ -64,7 +64,7 @@ namespace Assets
 
             if (_signedIn)
             {
-                StatusText.GetComponent<Text>().text = "Hello " + _authClient.GetUserName();
+                StatusText.GetComponent<Text>().text = "Hello " + _authClient.UserName;
             }
             else if (_signinCancelled)
             {
@@ -74,8 +74,7 @@ namespace Assets
             else
             {
                 Debug.Log("SignInBehavior::Failed to perform sign-in.");
-                StatusText.GetComponent<Text>().text =
-                    "An error occurred during sign in.  Please ensure you have Internet access.";
+                StatusText.GetComponent<Text>().text = "An error occurred during sign in.  Please ensure you have Internet access.";
             }
         }
 
@@ -144,10 +143,10 @@ namespace Assets
             Debug.Log("SignInBehavior::No auth reply received, assuming the user cancelled or was unable to complete the sign-in.");
             _watchForReply = false;
             _signinCancelled = true;
-            _authClient.Browser.OnAuthReply(null);
+            _authClient.Browser.OnAuthReply();
         }
 
-        public void OnAuthReply(object value)
+        public void OnAuthReply(string value = default)
         {
             if (_signinCancelled)
                 return;
@@ -155,7 +154,7 @@ namespace Assets
             _watchForReply = false;
             _replyReceived = true;
             Debug.Log("SignInBehavior::OnAuthReply: " + value);
-            _authClient.Browser.OnAuthReply(value as string);
+            _authClient.Browser.OnAuthReply(value);
         }
     }
 }

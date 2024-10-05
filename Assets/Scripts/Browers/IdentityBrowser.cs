@@ -21,7 +21,7 @@ namespace Assets
         protected abstract void Launch(string url);
         public virtual void Dismiss() { }
 
-        public void OnAuthReply(string value)
+        public void OnAuthReply(string value = default)
         {
             Debug.Log("MobileBrowser.OnAuthReply: " + value);
             _task.SetResult(new BrowserResult() { Response = value });
