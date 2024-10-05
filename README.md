@@ -1,4 +1,4 @@
-# Unity3D Android/iOS Authentication Example
+# Unity3D Android/iOS Authentication Client
 
 Mobile applications that need OpenID Connect / OAuth 2 authentication would normally use a library like Google's [AppAuth](https://github.com/openid/AppAuth-Android), which is available for Android and iOS, but unfortunatley *not* for Unity Android/iOS apps.
 
