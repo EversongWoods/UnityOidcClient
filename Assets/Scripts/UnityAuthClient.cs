@@ -2,12 +2,19 @@
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.Net;
+using System.Threading;
+using System.Text;
+using System.Linq;
+
 using IdentityModel.Client;
 using IdentityModel.OidcClient;
 using IdentityModel.OidcClient.Browser;
 using IdentityModel.OidcClient.Infrastructure;
 using IdentityModel.OidcClient.Results;
+
 using UnityEngine;
+using UnityEngine.Networking;
 
 namespace Assets
 {
@@ -15,18 +22,23 @@ namespace Assets
     {
         private OidcClient _client;
         private LoginResult _result;
+        private readonly string authUrl = "https://demo.duendesoftware.com/";
+        private const string EditorRedirectUri = "http://localhost:8181/";
+        private TaskCompletionSource<LoginResult> _loginTaskCompletionSource;
+        private AuthorizeState _authorizeState;
 
-        public UnityAuthClient()
+#if UNITY_EDITOR
+        private HttpListener httpListener;
+        private Thread listenerThread;
+#endif
+
+        public UnityAuthClient(string url)
         {
-            // We must disable the IdentityModel log serializer to avoid Json serialize exceptions on IOS.
 #if UNITY_IOS
             LogSerializer.Enabled = false;
 #endif
+            authUrl = url;
 
-            // On Android, we use Chrome custom tabs to achieve single-sign on.
-            // On Ios, we use SFSafariViewController to achieve single-sign-on.
-            // See: https://www.youtube.com/watch?v=DdQTXrk6YTk
-            // And for unity integration, see: https://qiita.com/lucifuges/items/b17d602417a9a249689f (Google translate to English!)
 #if UNITY_EDITOR || UNITY_STANDALONE
             Browser = new StandaloneBrowser();
 #elif UNITY_ANDROID
@@ -37,34 +49,21 @@ namespace Assets
             CertificateHandler.Initialize();
         }
 
-        // Instead of using AppAuth, which is not available for Unity apps, we are using
-        // this library: https://github.com/IdentityModel/IdentityModel.OidcClient2
-        // .Net 4.5.2 binaries have been built from the above project and included in
-        // /Assets/Plugins folder.
         private OidcClient CreateAuthClient()
         {
             var options = new OidcClientOptions()
             {
-                Authority = "https://demo.duendesoftware.com/",
-                
-                // NOTE: This config was modified from the ones in examples.
-                // Using the values in the examples for `OidcClientOptions`
-				// was giving "unauthorized client unknown client or client not enabled" error
-				// the first time page was loaded.
-				//
-				// The value for `ClientId` id is modified, and the key `ClientSecret`
-				// (which was omitted) is added.
-				// See: https://stackoverflow.com/a/65198297/3622300
-				//
-				// Probably a setup change was not reflected in existing examples.
+                Authority = authUrl,
                 ClientId = "interactive.public",
                 ClientSecret = "secret",
-                
                 Scope = "openid profile email",
-                // Redirect (reply) uri is specified in the AndroidManifest and code for handling
-                // it is in the associated AndroidUnityPlugin project, and OAuthUnityAppController.mm.
+#if UNITY_EDITOR
+                RedirectUri = EditorRedirectUri,
+                PostLogoutRedirectUri = EditorRedirectUri,
+#else
                 RedirectUri = "io.identitymodel.native://callback",
                 PostLogoutRedirectUri = "io.identitymodel.native://callback",
+#endif
                 Browser = Browser,
             };
 
@@ -77,7 +76,24 @@ namespace Assets
             _client = CreateAuthClient();
             try
             {
+#if UNITY_EDITOR
+                _loginTaskCompletionSource = new TaskCompletionSource<LoginResult>();
+                StartLocalServer();
+                var loginRequest = new LoginRequest();
+                _authorizeState = await _client.PrepareLoginAsync(loginRequest.FrontChannelExtraParameters);
+                Application.OpenURL(_authorizeState.StartUrl);
+
+                // Add timeout handling
+                var timeoutTask = Task.Delay(TimeSpan.FromMinutes(5));
+                var completedTask = await Task.WhenAny(_loginTaskCompletionSource.Task, timeoutTask);
+
+                if (completedTask == timeoutTask)
+                    throw new TimeoutException("Login process timed out");
+
+                _result = await _loginTaskCompletionSource.Task;
+#else
                 _result = await _client.LoginAsync(new LoginRequest());
+#endif
             }
             catch (Exception e)
             {
@@ -88,6 +104,9 @@ namespace Assets
             {
                 Debug.Log("UnityAuthClient::Dismissing sign-in browser.");
                 Browser.Dismiss();
+#if UNITY_EDITOR
+                StopLocalServer();
+#endif
             }
 
             if (_result.IsError)
@@ -110,9 +129,14 @@ namespace Assets
         {
             try
             {
-                await _client.LogoutAsync(new LogoutRequest() {
+#if UNITY_EDITOR
+                StartLocalServer();
+#endif
+                await _client.LogoutAsync(new LogoutRequest()
+                {
                     BrowserDisplayMode = DisplayMode.Hidden,
-                    IdTokenHint = _result.IdentityToken });
+                    IdTokenHint = _result.IdentityToken
+                });
                 Debug.Log("UnityAuthClient::Signed out successfully.");
                 return true;
             }
@@ -124,6 +148,9 @@ namespace Assets
             {
                 Debug.Log("UnityAuthClient::Dismissing sign-out browser.");
                 Browser.Dismiss();
+#if UNITY_EDITOR
+                StopLocalServer();
+#endif
                 _client = null;
             }
 
@@ -136,5 +163,110 @@ namespace Assets
         }
 
         public IdentityBrowser Browser { get; }
+
+#if UNITY_EDITOR
+        private void StartLocalServer()
+        {
+            httpListener = new HttpListener();
+            httpListener.Prefixes.Add(EditorRedirectUri);
+            httpListener.Start();
+
+            listenerThread = new Thread(ListenForCallback);
+            listenerThread.Start();
+        }
+
+        private void ListenForCallback()
+        {
+            while (httpListener.IsListening)
+            {
+                var context = httpListener.GetContext();
+                var request = context.Request;
+                var response = context.Response;
+
+                if (request.Url.AbsolutePath != "/")
+                    continue;
+
+                string responseString = "<html><body>Authentication successful. You can close this window now.</body></html>";
+                byte[] buffer = Encoding.UTF8.GetBytes(responseString);
+                response.ContentLength64 = buffer.Length;
+                response.OutputStream.Write(buffer, 0, buffer.Length);
+                response.OutputStream.Close();
+
+                var queryParams = System.Web.HttpUtility.ParseQueryString(request.Url.Query);
+                var code = queryParams["code"];
+                var state = queryParams["state"];
+
+                if (string.IsNullOrEmpty(code) || string.IsNullOrEmpty(state))
+                {
+                    Debug.LogError("Missing code or state in the callback URL");
+                    _loginTaskCompletionSource.SetException(new InvalidOperationException("Missing code or state in the callback URL"));
+                    break;
+                }
+
+                if (state != _authorizeState.State)
+                {
+                    Debug.LogError("State mismatch in the callback URL");
+                    _loginTaskCompletionSource.SetException(new InvalidOperationException("State mismatch in the callback URL"));
+                    break;
+                }
+
+                ExchangeCodeForToken(code);
+                break;
+            }
+        }
+
+        private async void ExchangeCodeForToken(string code)
+        {
+            try
+            {
+                if (_authorizeState == null)
+                    throw new InvalidOperationException("Authorize state is null. The login process may not have been initiated properly.");
+
+                Debug.Log($"Exchanging code for token. Code: {code.Substring(0, 5)}..., State: {_authorizeState.State.Substring(0, 5)}...");
+
+                // Construct the full redirect URI with the code
+                var redirectUri = $"{EditorRedirectUri}?code={code}&state={_authorizeState.State}";
+                Debug.Log($"Full redirect URI: {redirectUri}");
+
+                // Process the response
+                var result = await _client.ProcessResponseAsync(redirectUri, _authorizeState);
+
+                if (result == null)
+                    throw new InvalidOperationException("ProcessResponseAsync returned null result.");
+
+                if (result.IsError)
+                {
+                    Debug.LogError($"Error processing response: {result.Error}");
+                    _loginTaskCompletionSource.SetException(new Exception($"Error processing response: {result.Error}"));
+                    return;
+                }
+
+                Debug.Log("Token exchange successful.");
+                Debug.Log($"Access Token: {result.AccessToken.Substring(0, 10)}...");
+                Debug.Log($"Identity Token: {result.IdentityToken.Substring(0, 10)}...");
+                Debug.Log($"Refresh Token: {(string.IsNullOrEmpty(result.RefreshToken) ? "Not provided" : "Provided")}");
+
+                _loginTaskCompletionSource.SetResult(result);
+            }
+            catch (Exception ex)
+            {
+                Debug.LogError($"Exception in ExchangeCodeForToken: {ex.Message}");
+                Debug.LogException(ex);
+                _loginTaskCompletionSource.SetException(ex);
+            }
+        }
+
+        private void StopLocalServer()
+        {
+            if (httpListener != null && httpListener.IsListening)
+            {
+                httpListener.Stop();
+            }
+            if (listenerThread != null && listenerThread.IsAlive)
+            {
+                listenerThread.Join();
+            }
+        }
+#endif
     }
 }

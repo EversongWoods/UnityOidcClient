@@ -8,6 +8,8 @@ namespace Assets
 {
     public class SignInBehavior : MonoBehaviour
     {
+        [SerializeField] private string authorizeUrl = "https://demo.duendesoftware.com/";
+
         private const string SignInText = "SIGN IN";
         private const string SignOutText = "SIGN OUT";
         private const string PleaseWaitText = "PLEASE WAIT";
@@ -19,7 +21,7 @@ namespace Assets
         private bool _signinCancelled;
         private DateTime _watchForReplyStartTime;
         private bool _watchForReply;
-        private readonly UnityAuthClient _authClient = new UnityAuthClient();
+        private UnityAuthClient _authClient;
         private bool _signedIn;
         private const double MaxSecondsToWaitForAuthReply = 3;
 
@@ -28,6 +30,7 @@ namespace Assets
             Application.SetStackTraceLogType(LogType.Log, StackTraceLogType.None);
             Debug.Log("SignInBehavior::Start");
             EnableSignInButton(true);
+            _authClient = new UnityAuthClient(authorizeUrl);
         }
 
         public async void OnSignInClicked()
