@@ -3,7 +3,7 @@
     "m_SelectedProcess": {
         "deviceId": "RF8W60BLB9X",
         "name": "org.identitymodel.unityclient",
-        "processId": 13992,
+        "processId": 17190,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -17,49 +17,31 @@
         {
             "deviceId": "RF8W60BLB9X",
             "name": "org.identitymodel.unityclient",
-            "processId": 11958,
-            "exited": false
-        },
-        {
-            "deviceId": "RF8W60BLB9X",
-            "name": "org.identitymodel.unityclient",
-            "processId": 12541,
-            "exited": false
-        },
-        {
-            "deviceId": "RF8W60BLB9X",
-            "name": "org.identitymodel.unityclient",
-            "processId": 13105,
-            "exited": false
-        },
-        {
-            "deviceId": "RF8W60BLB9X",
-            "name": "org.identitymodel.unityclient",
-            "processId": 22557,
-            "exited": false
-        },
-        {
-            "deviceId": "RF8W60BLB9X",
-            "name": "org.identitymodel.unityclient",
-            "processId": 7223,
-            "exited": false
-        },
-        {
-            "deviceId": "RF8W60BLB9X",
-            "name": "org.identitymodel.unityclient",
-            "processId": 8187,
-            "exited": false
-        },
-        {
-            "deviceId": "RF8W60BLB9X",
-            "name": "org.identitymodel.unityclient",
             "processId": 13465,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "RF8W60BLB9X",
             "name": "org.identitymodel.unityclient",
             "processId": 13992,
+            "exited": true
+        },
+        {
+            "deviceId": "RF8W60BLB9X",
+            "name": "org.identitymodel.unityclient",
+            "processId": 14649,
+            "exited": true
+        },
+        {
+            "deviceId": "RF8W60BLB9X",
+            "name": "org.identitymodel.unityclient",
+            "processId": 16806,
+            "exited": true
+        },
+        {
+            "deviceId": "RF8W60BLB9X",
+            "name": "org.identitymodel.unityclient",
+            "processId": 17190,
             "exited": false
         }
     ],
