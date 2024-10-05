@@ -3,7 +3,7 @@
     "m_SelectedProcess": {
         "deviceId": "RF8W60BLB9X",
         "name": "org.identitymodel.unityclient",
-        "processId": 8187,
+        "processId": 13992,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -48,6 +48,18 @@
             "deviceId": "RF8W60BLB9X",
             "name": "org.identitymodel.unityclient",
             "processId": 8187,
+            "exited": false
+        },
+        {
+            "deviceId": "RF8W60BLB9X",
+            "name": "org.identitymodel.unityclient",
+            "processId": 13465,
+            "exited": false
+        },
+        {
+            "deviceId": "RF8W60BLB9X",
+            "name": "org.identitymodel.unityclient",
+            "processId": 13992,
             "exited": false
         }
     ],
