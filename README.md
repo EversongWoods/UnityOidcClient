@@ -1,12 +1,13 @@
 [简体中文](./README.ZH.md)
-# Unity3D Authentication Client for Secure Login based on the OIDC standard (using built-in system browser)
+# Unity3D Authentication Client for Secure Login based on the OIDC standard
 
-Mobile applications that need OpenID Connect / OAuth 2 authentication would normally use a library like Google's [AppAuth](https://github.com/openid/AppAuth-Android), which is available for Android and iOS, but unfortunatley *not* for Unity Android/iOS apps.
+This is a secure login application that uses OpenID Connect / OAuth2 authentication, developed based on [IdentityModel.OidcClient2](https://github.com/IdentityModel/IdentityModel.OidcClient2). It enables secure login through the system's built-in browser to any third-party or self-hosted IdentityServer that follows the OpenID Connect / OAuth2 standard for single sign-on (SSO). The application has three built-in browsers for different scenarios:
 
-Luckily, there's a C# library that does work: [IdentityModel.OidcClient2](https://github.com/IdentityModel/IdentityModel.OidcClient2).  This is not just a drop-in package, however - there are quite a few steps to configure your Unity project to use it successfully.  
-But it's not too onerous, and the end result is your app will use SFSafariViewController on iOS and Chrome Custom Tabs on Android, and be able to work with any OAuth 2 / OpenID Connect server.
+* **Android** , it uses **Chrome Custom Tabs**
+* **iOS** , it uses **SFSafariViewController**
+* **UnityEditor** , for development mode, it uses the default browser of Windows / MacOS
 
-This repository contains an example Unity 2022 Android/iOS app that demonstrates how this can be achieved.  It uses a demo instance of identityserver ([demo.duendesoftware.com](https://demo.duendesoftware.com/)). 
+This repository contains a sample Unity2022 Android/iOS/UnityEditor application that demonstrates how to implement this. It uses a demo instance of IdentityServer ([demo.duendesoftware.com](https://demo.duendesoftware.com/)).
 
 ![DEMO](./DEMO.gif)
 
@@ -24,20 +25,6 @@ You can login with `alice/alice` or `bob/bob`
 UnitySendMessage("SignInCanvas", "OnAuthReply", queryString);
 
 So it's expected that your sign-in scene has a GameObject called SignInCanvas that has a script attached with  function OnAuthReply, as demonstrated in the example scene in this repo.
-
-## iOS support
-
-* Derive an objective-c class from UnityAppController to handle auth redirects (see OAuthUnityAppController.mm).
-* Include a class for interacting with SFSafariViewController in Assets/Plugins/iOS (see SafariView.mm).
-* In Unity, select SafariView.mm in Project view, and in Inspector pane, under 'Rarely used services' select 'SafariServices'.
-
-## Android support
-
-* Import the Google Play Services Resolver for Unity package from https://github.com/googlesamples/unity-jar-resolver
-* Add an Android Unity plugin project to handle auth redirects (see AndroidUnityPlugin project).
-* You will need to copy classes.jar from your Unity install folder e.g. C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Release\Classes\classes.jar to AndroidUnityPlugin/app/libs.
-* This project contains an activity that handles auth redirects and some build scripts to export the project as a JAR file.
-* Create/modify Assets/Plugins/Android/AndroidManifest.xml to include the OAuthRedirectActivity, ensuring it has the redirect URL specified in the data element's schema attribute.
 
 ## Important: Unity Version Update
 
