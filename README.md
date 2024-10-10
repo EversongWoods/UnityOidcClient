@@ -6,7 +6,7 @@ Mobile applications that need OpenID Connect / OAuth 2 authentication would norm
 Luckily, there's a C# library that does work: [IdentityModel.OidcClient2](https://github.com/IdentityModel/IdentityModel.OidcClient2).  This is not just a drop-in package, however - there are quite a few steps to configure your Unity project to use it successfully.  
 But it's not too onerous, and the end result is your app will use SFSafariViewController on iOS and Chrome Custom Tabs on Android, and be able to work with any OAuth 2 / OpenID Connect server.
 
-This repository contains an example Unity 2022 Android/iOS app that demonstrates how this can be achieved.  It uses a demo instance of identityserver ([demo.duendesoftware.com](https://demo.duendesoftware.com/)) - you can see the source code [here](https://github.com/IdentityServer/IdentityServer4.Demo). Vidoes of the example running: [Android](https://codenature.info/pub/unityauth/android-identitymodel-unity-sample.mp4) and [iOS](https://codenature.info/pub/unityauth/iphone-identitymodel-unity-sample.mp4).
+This repository contains an example Unity 2022 Android/iOS app that demonstrates how this can be achieved.  It uses a demo instance of identityserver ([demo.duendesoftware.com](https://demo.duendesoftware.com/)) - you can see the source code [here](https://github.com/IdentityServer/IdentityServer4.Demo). 
 
 You can login with `alice/alice` or `bob/bob`
 
