@@ -1,7 +1,7 @@
 [简体中文](./README.ZH.md)
 # Unity3D Authentication Client for Secure Login based on the OIDC standard
 
-This is a secure login application that uses OpenID Connect / OAuth2 authentication, developed based on [IdentityModel.OidcClient2](https://github.com/IdentityModel/IdentityModel.OidcClient2). It enables secure login through the system's built-in browser to any third-party or self-hosted IdentityServer that follows the OpenID Connect / OAuth2 standard for single sign-on (SSO). The application has three built-in browsers for different scenarios:
+This is a secure login application that uses OpenID Connect / OAuth2 authentication, developed based on [IdentityModel.OidcClient2](https://github.com/IdentityModel/IdentityModel.OidcClient2). It enables secure login through the system's built-in browser to any third-party or self-hosted IdentityServer that follows the OpenID Connect / OAuth2 standard for single sign-on (SSO). The application has three built-in browsers redirect method for different scenarios:
 
 * **Android** , it uses **Chrome Custom Tabs**
 * **iOS** , it uses **SFSafariViewController**
