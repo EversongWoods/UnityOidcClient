@@ -8,6 +8,8 @@ But it's not too onerous, and the end result is your app will use SFSafariViewCo
 
 This repository contains an example Unity 2022 Android/iOS app that demonstrates how this can be achieved.  It uses a demo instance of identityserver ([demo.duendesoftware.com](https://demo.duendesoftware.com/)). 
 
+![DEMO](./DEMO.gif)
+
 You can login with `alice/alice` or `bob/bob`
 
 ## Unity configuration notes:
