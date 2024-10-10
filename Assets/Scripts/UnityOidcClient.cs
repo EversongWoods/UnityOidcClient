@@ -238,8 +238,8 @@ namespace Assets
 
                 // Update the current result with the new tokens
                 Debug.Log("Token refreshed successfully.");
-                Debug.Log($"New Access Token: {refreshResult.AccessToken.Substring(0, 10)}...," +
-                    $"\nToken: {refreshResult.IdentityToken.Substring(0, 10)}..., " +
+                Debug.Log($"New Access Token: {refreshResult.AccessToken}," +
+                    $"\nIdentity Token: {refreshResult.IdentityToken}," +
                     $"\nRefresh Token: {(refreshResult.RefreshToken != null ? "Provided" : "Not updated")}, " +
                     $"\nExpires in: {refreshResult.ExpiresIn} seconds");
                 return true;
