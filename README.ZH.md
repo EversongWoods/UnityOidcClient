@@ -6,7 +6,7 @@
 幸运的是，有一个可以使用的C#库：[IdentityModel.OidcClient2](https://github.com/IdentityModel/IdentityModel.OidcClient2)。然而，这不仅仅是一个可以直接使用的包 - 要在Unity项目中成功使用它需要相当多的配置步骤。  
 但这并不太繁琐，最终结果是您的应用将在iOS上使用SFSafariViewController，在Android上使用Chrome Custom Tabs，并能够与任何OAuth 2 / OpenID Connect服务器配合使用。
 
-这个仓库包含了一个Unity 2022 Android/iOS应用的示例，演示了如何实现这一目标。它使用了identityserver的演示实例([demo.duendesoftware.com](https://demo.duendesoftware.com/)) - 您可以在[这里](https://github.com/IdentityServer/IdentityServer4.Demo)查看源代码。示例运行的视频：[Android](https://codenature.info/pub/unityauth/android-identitymodel-unity-sample.mp4)和[iOS](https://codenature.info/pub/unityauth/iphone-identitymodel-unity-sample.mp4)。
+这个仓库包含了一个Unity 2022 Android/iOS应用的示例，演示了如何实现这一目标。它使用了identityserver的演示实例([demo.duendesoftware.com](https://demo.duendesoftware.com/))。
 
 您可以使用`alice/alice`或`bob/bob`登录
 
