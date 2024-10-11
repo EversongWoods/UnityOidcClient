@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>IdentityModel</id>
+    <version>7.0.0</version>
+    <authors>Dominick Baier,Brock Allen</authors>
+    <license type="expression">Apache-2.0</license>
+    <licenseUrl>https://licenses.nuget.org/Apache-2.0</licenseUrl>
+    <icon>icon.jpg</icon>
+    <readme>README.md</readme>
+    <projectUrl>https://github.com/IdentityModel/IdentityModel</projectUrl>
+    <description>OpenID Connect &amp; OAuth 2.0 client library</description>
+    <tags>OAuth2 OAuth 2.0 OpenID Connect Security Identity IdentityServer</tags>
+    <repository type="git" url="https://github.com/IdentityModel/IdentityModel" commit="9ce1195f6cb07a3ed80c66ef8d87489e08aac987" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.6.2">
+        <dependency id="System.Text.Json" version="8.0.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETFramework4.7.2">
+        <dependency id="System.Text.Json" version="8.0.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net6.0" />
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="System.Text.Json" version="8.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Net.Http" targetFramework=".NETFramework4.6.2, .NETFramework4.7.2" />
+    </frameworkAssemblies>
+  </metadata>
+</package>
