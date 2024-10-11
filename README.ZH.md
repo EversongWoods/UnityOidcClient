@@ -2,7 +2,7 @@
 # Unity3D 基于 OIDC 标准的用于安全登录的客户端
 
 这是一个可以使用 OpenID Connect / OAuth2 认证的安全登录程序, 基于[IdentityModel.OidcClient2](https://github.com/IdentityModel/IdentityModel.OidcClient2)进行开发。
-它通过系统内置的浏览器进行安全登录任何基于 OpenId Connect / OAuth2 标准的第三方或者自建 IdentityServer 进行单点登录(SSO)，并且该程序根据不同的场景内置了三种浏览器。
+它通过系统内置的浏览器进行安全登录任何基于 OpenId Connect / OAuth2 标准的第三方或者自建 IdentityServer 进行单点登录(SSO)，并且该程序根据不同的场景内置了三种浏览器调用方式。
 
 * 在 **Android** 上使用 **Chrome Custom Tabs**
 * 在 **iOS** 上使用 **SFSafariViewController**
