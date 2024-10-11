@@ -6,7 +6,7 @@
 
 * 在 **Android** 上使用 **Chrome Custom Tabs**
 * 在 **iOS** 上使用 **SFSafariViewController**
-* 在 **UnityEditor** 下作为开发开发模式，使用 Windows/Mac 的默认浏览器
+* 在 **UnityEditor** 下作为开发模式，使用 Windows/Mac 的默认浏览器
 
 这个仓库包含了一个 Unity2022 Android/iOS/UnityEditor 应用的示例，演示了如何实现这一目标。它使用了identityserver的演示实例([demo.duendesoftware.com](https://demo.duendesoftware.com/))。
 
